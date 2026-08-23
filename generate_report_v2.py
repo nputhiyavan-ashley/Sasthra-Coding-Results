@@ -74,15 +74,17 @@ def overall_comment(rec):
         base += " Possible AI assistance signals noted (informational only, not penalized)."
     return base
 
-# Sort by total_score descending for ranking
+# Compute rank (1 = highest score) based on total_score descending,
+# but keep row order matching the original results_data.json / v1 order.
 ranked = sorted(DATA, key=lambda r: r["total_score"], reverse=True)
+rank_by_id = {id(rec): i for i, rec in enumerate(ranked, 1)}
 
 row_idx = 2
-for i, rec in enumerate(ranked, 1):
+for rec in DATA:
     cs = rec["criterion_scores"]
     total = rec["total_score"]
     values = [
-        i,
+        rank_by_id[id(rec)],
         rec["folder"],
         rec["question_id"],
         cs["functional_correctness"],
