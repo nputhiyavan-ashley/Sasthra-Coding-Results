@@ -1,0 +1,20 @@
+PS C:\Users\lokes\OneDrive\Desktop\ashley exam> & C:\Python314\python.exe "c:/Users/lokes/OneDrive/Desktop/ashley exam/code.py"
+3
+IT,45.4
+IT,48.5
+CSE,50.4
+CSE:50.40:50.4
+IT:46.95:48.5
+PS C:\Users\lokes\OneDrive\Desktop\ashley exam> & C:\Python314\python.exe "c:/Users/lokes/OneDrive/Desktop/ashley exam/code.py"
+4
+IT,20.4
+IT,30.4
+CSE,10.5
+CSE,20.5
+IT:25.40:30.4
+CSE:15.50:20.5
+PS C:\Users\lokes\OneDrive\Desktop\ashley exam> & C:\Python314\python.exe "c:/Users/lokes/OneDrive/Desktop/ashley exam/code.py"
+2
+AIDS,20.4
+AIDS,30.4
+AIDS:25.40:30.4
